@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+ <meta charset="UTF-8">  
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+ <title>SQL Query Builder</title>  
+ <link rel="stylesheet" href="styles.css">  
+</head>  
+<body>  
+ <header>  
+  <nav>  
+   <ul>  
+     <li><a href="#home">Home</a></li>  
+     <li><a href="#query-builder">Query Builder</a></li>  
+     <li><a href="#leaderboard">Leaderboard</a></li>  
+   </ul>  
+  </nav>  
+ </header>  
+ <main>  
+  <section id="home">  
+   <h1>Welcome to SQL Query Builder!</h1>  
+   <p>Build and execute SQL queries to practice your skills.</p>  
+  </section>  
+  <section id="query-builder">  
+   <h2>Query Builder</h2>  
+   <div class="query-builder-container">  
+     <div class="query-builder-header">  
+      <h3>Query Builder</h3>  
+      <button id="execute-query">Execute Query</button>  
+     </div>  
+     <div class="query-builder-body">  
+      <div class="table-select">  
+       <label for="table">Select a table:</label>  
+       <select id="table" name="table">  
+         <option value="customers">Customers</option>  
+         <option value="orders">Orders</option>  
+         <option value="products">Products</option>  
+         <option value="employees">Employees</option>  
+         <option value="sales">Sales</option>  
+       </select>  
+      </div>  
+      <div class="column-select">  
+       <label for="columns">Select columns:</label>  
+       <select id="columns" name="columns" multiple>  
+         <option value="*">*</option>  
+         <option value="name">Name</option>  
+         <option value="email">Email</option>  
+         <option value="country">Country</option>  
+       </select>  
+      </div>  
+      <div class="condition-select">  
+       <label for="condition">Select a condition:</label>  
+       <select id="condition" name="condition">  
+         <option value="WHERE">WHERE</option>  
+         <option value="AND">AND</option>  
+         <option value="OR">OR</option>  
+       </select>  
+      </div>  
+      <div class="value-input">  
+       <label for="value">Enter a value:</label>  
+       <input type="text" id="value" name="value">  
+      </div>  
+     </div>  
+   </div>  
+  </section>  
+  <section id="leaderboard">  
+   <h2>Leaderboard</h2>  
+   <ul id="leaderboard-list">  
+     <!-- Leaderboard list will be rendered here -->  
+   </ul>  
+  </section>  
+ </main>  
+ <script src="script.js"></script>  
+</body>  
+</html>
